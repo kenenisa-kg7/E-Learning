@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="css/user-dashboard-style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Welcome to Your User Dashboard</h1>
+            <nav>
+                <a href="/user">My Profile</a>
+                <a href="/courses">My Courses</a>
+                <a href="/logout">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="dashboard-container">
+            <section class="user-info">
+                <h2>Your Information</h2>
+                <p><strong>Email:</strong> <span id="user-email">user@example.com</span></p>
+                <p><strong>Role:</strong> <span id="user-role">User</span></p>
+                <a href="/user" class="btn">Edit Profile</a>
+            </section>
+
+            <section class="user-courses">
+                <h2>Your Courses</h2>
+                <ul id="courses-list">
+                    <!-- Dynamically populate the course list -->
+                    <li>Course 1</li>
+                    <li>Course 2</li>
+                    <li>Course 3</li>
+                </ul>
+                <a href="/courses" class="btn">View All Courses</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 E-learning Platform. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Dynamically populate the user data if needed
+        document.getElementById('user-email').innerText = 'user@example.com'; // Replace with dynamic data
+        document.getElementById('user-role').innerText = 'User'; // Replace with dynamic data
+    </script>
+</body>
+</html>
